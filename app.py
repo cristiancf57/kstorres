@@ -27,9 +27,17 @@ def nosotros():
 def service():
     return render_template('service.html')
 
+@app.route('/servidet')
+def detalleserv():
+    return render_template('detallserv.html')
+
 @app.route('/noticia',methods=['GET','POST'])
 def noticia():
     return render_template('noticia.html')
+
+@app.route('/noticiadet')
+def noticiadet():
+    return render_template('noticiadet.html')
 
 @app.route('/contacto',methods=['GET','POST'])
 def contacto():
